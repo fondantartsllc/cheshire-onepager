@@ -5,30 +5,112 @@
 		<meta name="keywords" content="Cheshire Bakery, Cheshire cakes">
 		
 		<style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-        }
-
-        body {
-            display: table;
-        }
-
-        .centered-div {
-            text-align: center;
-            display: table-cell;
-            vertical-align: middle;
-        }
+            html,body
+			{
+				background:white;margin:0;
+			}
+			            
+			.content
+			{
+				color:#777;
+				font:12px/1.4 "helvetica neue",arial,sans-serif;
+				width:100%;
+				margin:20px auto;
+			}
+			
+            h1
+			{
+				font-size:12px;
+				font-weight:normal;
+				color:#ddd;
+				margin:0;
+			}
+			
+            p
+			{
+				margin:0 0 20px
+			}
+			
+            a 
+			{
+				color:#22BCB9;
+				text-decoration:none;
+			}
+			
+            .cred
+			{
+				margin-top:20px;
+				font-size:11px;
+				margin: auto;
+			}
+		
+			#galleria{height:80%; width:100%; margin: auto;}
         </style>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+		<script src="galleria-1.5.7.min.js"></script>
 	</head>
 	<body>
-		<div class="centered-div">
-		   <h1>Welcome to Cheshire Bakery!</h1>
-		   <h2>Cakes tend to disappear, but smiles remain.</h2>
-		   <br />
-		   <h2>Official website is coming soon.</h2>
+		<div class="content">
+			<div id="galleria">
+				<a href="https://image.ibb.co/fSWMLn/DSC02059_1.jpg">
+					<img 
+						src="https://thumb.ibb.co/k5J1Ln/DSC02059_1.jpg",
+						data-big="https://image.ibb.co/fSWMLn/DSC02059_1.jpg"
+					>
+				</a>
+				<a href="https://image.ibb.co/m6FRmS/DSC02052_1.jpg">
+					<img 
+						src="https://thumb.ibb.co/kLye6S/DSC02052_1.jpg",
+						data-big="https://image.ibb.co/m6FRmS/DSC02052_1.jpg"
+					>
+				</a>
+				<a href="https://image.ibb.co/cqwo0n/DSC02045_1.jpg">
+					<img 
+						src="https://thumb.ibb.co/nj4xt7/DSC02045_1.jpg",
+						data-big="https://image.ibb.co/cqwo0n/DSC02045_1.jpg"
+					>
+				</a>
+				<a href="https://image.ibb.co/nr1ct7/DSC02044_1.jpg">
+					<img 
+						src="https://thumb.ibb.co/jtXT0n/DSC02044_1.jpg",
+						data-big="https://image.ibb.co/nr1ct7/DSC02044_1.jpg"
+					>
+				</a>
+				<a href="https://image.ibb.co/knnvfn/DSC02032_1.jpg">
+					<img 
+						src="https://thumb.ibb.co/hCTe6S/DSC02032_1.jpg",
+						data-big="https://image.ibb.co/knnvfn/DSC02032_1.jpg"
+					>
+				</a>
+				<a href="https://image.ibb.co/b1K80n/DSC02023_1.jpg">
+					<img 
+						src="https://thumb.ibb.co/cZvgLn/DSC02023_1.jpg",
+						data-big="https://image.ibb.co/b1K80n/DSC02023_1.jpg"
+					>
+				</a>
+				<a href="https://image.ibb.co/mQYqD7/DSC02024_1.jpg">
+					<img 
+						src="https://thumb.ibb.co/hRMz6S/DSC02024_1.jpg",
+						data-big="https://image.ibb.co/mQYqD7/DSC02024_1.jpg"
+					>
+				</a>
+				<a href="https://image.ibb.co/hRagLn/DSC02020_1.jpg">
+					<img 
+						src="https://thumb.ibb.co/fN7Ht7/DSC02020_1.jpg",
+						data-big="https://image.ibb.co/hRagLn/DSC02020_1.jpg"
+					>
+				</a>
+			</div>
+			<p class="cred">Powered by <a href="http://galleria.io">Galleria</a>.</p>
 		</div>
+		<script>
+		$(function() {
+			// Load the classic theme
+			Galleria.loadTheme('galleria.classic.min.js');
+
+			// Initialize Galleria
+			Galleria.run('#galleria');
+		});
+		</script>
 	</body>
 </html>
